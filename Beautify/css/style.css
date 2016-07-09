@@ -1,0 +1,51 @@
+.beautify {
+  position: relative;
+  margin-top: 150px;
+  width: 876px;
+  margin-left: 150px;
+  height: 400px;
+  background-image: url(../img/2.jpg);
+  background-size: 876px; }
+  .beautify .drag-me {
+    display: block;
+    border-left: 1px solid #000;
+    border-right: 1px solid #fff;
+    cursor: e-resize;
+    width: 1px;
+    position: absolute;
+    margin-left: -1px;
+    height: 400px;
+    box-sizing: border-box;
+    z-index: 3;
+    opacity: .3; }
+    .beautify .drag-me:before {
+      font-family: "Segoe UI";
+      content: '< >';
+      text-align: center;
+      font-size: 10px;
+      line-height: 28px;
+      position: absolute;
+      color: #fff;
+      border-radius: 14px;
+      top: 50%;
+      left: 0;
+      background: #000;
+      width: 28px;
+      height: 28px;
+      margin-top: -14px;
+      margin-left: -14px; }
+  .beautify div {
+    top: 0;
+    position: absolute;
+    width: 438px;
+    height: 400px;
+    background-size: 876px; }
+    .beautify div.original {
+      left: 0;
+      background-image: url(../img/1.jpg); }
+    .beautify div.beautified {
+      background-image: url(../img/2.jpg);
+      right: 0;
+      background-position-x: right; }
+
+/*# sourceMappingURL=style.css.map */

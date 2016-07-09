@@ -1,0 +1,66 @@
+$boxWidth: 438px*2;
+$boxHeight:200px*2;
+
+
+
+.beautify{
+  position: relative;
+  margin-top: 150px;
+  width: $boxWidth;
+  margin-left: 150px;
+  height: $boxHeight;
+
+  background-image: url(../img/2.jpg);
+
+  background-size:$boxWidth;
+  .drag-me{
+    display: block;
+    border-left: 1px solid #000;
+    border-right: 1px solid #fff;
+    cursor: e-resize;
+    width: 1px;
+    position: absolute;
+    margin-left: -1px;
+    height: $boxHeight;
+    box-sizing: border-box;
+    z-index: 3;
+    opacity:.3;
+
+    &:before{
+      font-family:"Segoe UI";
+      content: '< >';
+      text-align: center;
+      font-size:10px;
+      line-height:28px;
+      position: absolute;
+      color: #fff;
+      border-radius:14px;
+      top: 50%;
+      left: 0;
+      background: #000;
+      width:28px;
+      height: 28px;
+      margin-top: -14px;
+      margin-left: -14px;
+
+    }
+  }
+  div{
+    top: 0;
+    position: absolute;
+    width: $boxWidth/2;
+    height: $boxHeight;
+    background-size:$boxWidth;
+    &.original{
+      left: 0;
+      background-image: url(../img/1.jpg);
+    }
+    &.beautified{
+      background-image: url(../img/2.jpg);
+      right: 0;
+      background-position-x: right;
+
+    }
+  }
+
+}
